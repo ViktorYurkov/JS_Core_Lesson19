@@ -14,7 +14,9 @@ server.get("/", function (req, resp) {
 
 server.get('/user-data', function (request, response) {
     var obj = request.query;
-    console.log(obj);
+    for (var k in obj) {
+        console.log(obj[k] + ' ValidatedByGET');
+    };
     response.send(obj);
 });
 
@@ -24,7 +26,9 @@ extended: true
 
 server.post('/user-data', function (request, response) {
     var obj = request.body;
-    console.log(obj);
+    for (var k in obj) {
+        console.log(obj[k] + ' ValidatedByGET');
+    };
     response.send(obj);
 });
 
