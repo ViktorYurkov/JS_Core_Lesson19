@@ -13,8 +13,8 @@ $(document).ready(function () {
                 console.log('end Get');
             });
         } else {
-            $('#userAgeGet').val("ввести вік від 1 до 100");
-            //$('#userAgeGet').css('color', 'red');
+            $('#userAgeGet').val(null);
+            $('#userAgeGet').attr('placeholder', 'ввести вік від 1 до 100');
         };
 
     });
@@ -32,8 +32,8 @@ $(document).ready(function () {
                 console.log('end Post');
             });
         } else {
-            $('#userAge').val("ввести вік від 1 до 100");
-            //$('#userAge').css('color', 'red');
+            $('#userAge').val(null);
+            $('#userAge').attr('placeholder', 'ввести вік від 1 до 100');
         };
     });
 });
