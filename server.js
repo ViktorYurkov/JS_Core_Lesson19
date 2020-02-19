@@ -18,6 +18,10 @@ server.get('/user-data', function (request, response) {
     response.send(obj);
 });
 
+server.use(bodyParser.urlencoded({
+extended: true
+}));
+
 server.post('/user-data', function (request, response) {
     var obj = request.body;
     console.log(obj);
