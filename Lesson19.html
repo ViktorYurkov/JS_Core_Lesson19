@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lesson16</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <h1>Реєстрація користувача</h1>
+    <p>введіть свої дані (GET запит)</p><br>
+    <form id='userFormGet'>
+        <label>Ваше прізвище :</label><br>
+        <input type="text" id="userLastNameGet"><br>
+
+        <label>Ваше ім'я:</label><br>
+        <input type="text" id="userNameGet"><br>
+
+        <label>Вік</label><br>
+        <input type="text" id="userAgeGet"><br>
+
+        <label>Місце проживання</label><br>
+        <input type="text" id="userAddressGet"><br>
+
+        <br>
+        <input type="button" value="передати дані" id="sendDataUserGet">
+    </form>
+
+
+    <h1>Реєстрація користувача</h1>
+    <p>введіть свої дані (POST запит)</p><br>
+    <form id='userFormPost'>
+        <label>Ваше прізвище :</label><br>
+        <input type="text" id="userLastName"><br>
+
+        <label>Ваше ім'я:</label><br>
+        <input type="text" id="userName"><br>
+
+        <label>Вік</label><br>
+        <input type="text" id="userAge"><br>
+
+        <label>Місце проживання</label><br>
+        <input type="text" id="userAddress"><br>
+
+        <br>
+        <input type="button" value="передати дані" id="sendDataUserPost">
+    </form>
+
+    <script src="Lesson19.js"></script>
+
+</body>
+
+</html>
